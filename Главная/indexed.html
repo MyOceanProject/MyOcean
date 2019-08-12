@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<title>Добро пожаловать в MyOcean!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript">
+		function valid (form) {
+			// переменные (Общая, пол, имя, пароль, подтверждение)
+
+			var fail = false;
+            
+			var name = form.name.value;
+			var email = form.email.value;
+			var password = form.password.value;
+			var Repassword = form.Repassword.value;
+			var state = form.state.value;
+            
+			// регулярные выражения для проверки почты
+			var pattern = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i;
+			
+		// один из видов регулярных выражений: 
+			/* else if(email.split('@').length - 1 == 0)
+				fail = "Вы ввели свою почту неккоректно"; */
+
+		// используется для проверки введёных данных
+			if(name == "" || name == " ")
+				fail = "Вы не ввели свое имя";
+			else if(pattern) 
+				fail = "Вы ввели свою почту неккоректно";
+			else if(password == "")
+				fail = "Вы не ввели свой пароль";
+			else if(password != Repassword)
+				fail = "Вы ввели не правильный пароль";
+			else if(state == "")
+				fail = "Укажите пол";
+			if(fail) 
+				alert(fail);
+			else 
+				// Перенаправляет на другой сайт
+				window.location = "http://google.com";
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+			<ul class="header-ul">
+				<li class="li-1"><a href="index.html" target="_blank" title="информация недоступна">Главная страница</a></li>
+				<li class="li-2"><a href="mynews.html" target="_blank" title="информация недоступна">Моя лента</a></li>
+				<li class="info"><p><i>ссылки временно недоступны.</i></p></li>
+				<li class="li-4"><a href="oceaninfo.html" target="_blank" title="информация недоступна">Информация</a></li>
+				<li class="li-3"><a href="AK.html" target="_blank" title="информация недоступна">Об авторе</a></li>
+			</ul>
+		</div>
+	<div class="footer">
+		<ul class="ul-2">
+			<li class="li-5"><p><blockquote>MyOcean 2019. Все права защищены©</blockquote></p></li>
+			<li class="li-6"><a href="https://vk.com/myoceanprivate" target="_blank">Наша группа в ВКонтакте</a></li>
+		</ul>
+	</div>
+	<br>
+	<form action="" method="post" name="test" onsubmit="valid (this)" id="form">
+		<label for="name">Имя</label>
+		<input type="text" name="name" id="name" placeholder="Имя">
+		<br>
+		<br>
+		<label for="email">Email</label>
+		<input type="text" name="email" id="email" placeholder="example@mail.ru">
+		<br>
+		<br>
+		<label for="password">Пароль</label>
+		<input type="password" name="password" id="password" placeholder="Пароль">
+		<br>
+		<br>
+		<label for="Repassword">Пароль</label>
+		<input type="password" name="Repassword" id="Repassword" placeholder="Проверка пароля">
+		<br>
+		<br>
+		<span>Пол: </span>
+		<input type="radio" name="state" id="male" value="Мужской"><label>Мужской</label>
+		<input type="radio" name="state" id="female" value="Женский"><label>Женский</label>
+		<br>
+		<br>
+	<input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Готово">
+	</form>
+</body>
+</html>

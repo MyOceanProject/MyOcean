@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type= "image/x-icon">
+  <link rel="stylesheet" type="text/css" href="create.css">
+	<meta name="description" content="Главная страница портала MyOcean. Интересные статьи и 'мой сон'. Авторизация в разработке.">
+	<meta name="keywords" content="MyOcean, OceanPortal, Вода">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Patua+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Special+Elite|Viga&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<title>Главный портал - MyOcean</title>
+	<!-- ======================================== -->
+
+	<script type="text/javascript">
+		function valid (form) {
+			let failed = false;
+
+			let name = form.name.value;
+			let email = form.email.value;
+			let password = form.password.value;
+
+
+			if(name == "" || name == " ")
+				failed = "Вы не ввели свой логин";
+			else if(email == "" || email == " ")
+				failed = "Вы ввели свою почту неккоректно";
+			else if(password == "" || password == " ")
+				failed = "Вы забыли ввести свой пароль";
+			if(failed)
+				alert(failed);
+			else 
+				alert("Регистрация не доступна");
+				//window.location = "index.html";
+		}
+	</script>
+
+	<!-- ======================================== -->
+</head>
+<body>
+	<header class="header">
+		<ul class="ul-top">
+				<li class="li-1"><a href="index.html">Главная</a></li>
+				<li class="li-2"><a href="index.html">Лента</a></li>
+				
+				<li class="li-3"><a href="index.html">Галерея</a></li>
+				<li class="li-4"><a href="index.html">Дополнительно</a></li>
+				<li class="li-5"><a href="index.html">Контакты</a></li>
+		</ul>
+	</header>
+	<section class="left">
+	 	<h1 class="autor">Авторизация</h1>
+	 	<br>
+	 <form action="#" method="get" onsubmit="valid (this)" id="form">
+	 		<label for="name" class="text_name">Введите ваш логин</label>
+	 		<br>
+	 		<input type="text" class="text_name" name="name" id="name">
+	 		<br>
+	 		<br>
+	 	  <label for="email" class="email">Введите ваш email</label>
+	 	  <br>
+	 		<input type="email" placeholder="example@gmail.com" name="email" class="email" id="email">
+	 		<br>
+	 		<br>
+	 	   <label for="password" class="pasw_input">Введите ваш пароль</label>
+	 		<input type="password" name="password" class="pasw_input" id="password">
+	 		<br>
+	 		<br>
+	 			<div class="text_ar">
+	 		<p class="p_form">Дополнительно</p>
+	 		<textarea placeholder="необязательно" cols="30" rows="6"></textarea>
+				</div>
+	 		<button class="button_input" onclick="valid(getElementById('form'))">Завершить</button>
+	 	</form>
+	 </section>
+		<main class="main">
+	 		<div class="block">
+	 		  <a class="news1" href="hello.html" target="_blank">
+	 			<div class="text_block">	
+			<h1 class="h1_block">Добро пожаловать!</h1>
+			<p class="p_block">Здесь собрана подбробная информация о сайте. Что на нём будет и какова его цель. На данный момент страницы находятся в разработке. Авторизация временно не доступна. <b class="p_block4">Читать подробнее -></b></p>
+			<p class="p_block2">Опубликовано 12.08.19</p>
+			<p class="p_block3">Пост закреплён</p>
+			<img class="image" src="logo.png" alt="photo" title="logo">
+				</div>
+			  </a>
+	 		</div>
+		</main>
+</body>
+</html>

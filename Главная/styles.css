@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'desonanz';
+	src: url('fonts/desonanz.ttf') format('truetype');
+	font-family: 'AmaticSC';
+	src: url('fonts/17550.ttf') format('truetype');
+	/*font-family: 'AmericanCapt';
+	src: url('fonts/American_Captain_Kirilitsa.ttf') format('truetype');*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(228, 228, 228);
+}
+
+h1 {
+	font-family: Verdana;
+}
+
+.header {
+	background-color: rgb(20, 10, 148);
+	width: 100%;
+	height: 68px;
+}
+
+ul {
+	list-style: none;
+	position: absolute;
+}
+
+li {
+	font-family: Verdana;
+	line-height: 25px;
+	font-size: 25px;
+	position: absolute;
+	color: rgb(250, 250, 250);
+}
+
+.li-1 {
+	text-align: center;
+	margin: 20px 5px;
+	margin-left: 60px;
+	height: 70px;
+	font-size: 50px;
+	font-family: AmaticSC;
+}
+
+.li-2 {
+	margin: 20px 5px;
+	font-size: 50px;
+	margin-left: 400px;
+	font-family: AmaticSC;
+}
+
+.li-3 {
+	margin: 22px 5px;
+	margin-left: 1300px;
+	position: relative;
+	font-family: AmaticSC;
+	font-size: 50px;
+}
+
+.li-4 {
+	margin: 22px 5px;
+	font-size: 50px;
+	font-family: AmaticSC;
+	margin-left: 1000px;
+}
+
+.info {
+	font-size: 15px;
+	margin-left: 650px;
+	margin-top: 20px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	cursor: default;
+}
+
+.li-5 {
+	position: relative;
+	font-size: 15px;
+	margin-left: 635px;
+	margin-top: 40px;
+}
+
+.li-6 a {
+	color: rgb(75, 91, 219);
+	position: relative;
+	margin-left: 100px;
+	font-size: 20px;
+	bottom: 25px;
+}
+
+a {
+	color: rgb(250, 250, 250);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(161, 161, 161);
+	text-decoration: none;
+}
+
+.footer {
+	background-color: rgb(54, 54, 54);
+	width: 100%;
+	height: 120px;
+	top: 100%;
+	position: absolute;
+}

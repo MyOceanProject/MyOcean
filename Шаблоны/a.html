@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <link rel="stylesheet" href="sss.css" content="text/css">
+  <script type="text/javascript">
+  		function valid (form) {
+
+  			let not = false;
+  			let name = form.name.value;
+  			let password = form.password.value;
+
+  			if(name == "" || name == " ") 
+  				not = "Вы не ввели своё имя";
+  			else if(password == "" || password == " ")
+  				not = "Вы не ввели свой пароль";
+  			else 
+  				window.location = "http://google.com";
+  			if(not) 
+  				alert(not);
+  		}
+  </script>
+</head>
+<body>
+	<form action="" class="form" method="get" onsubmit="valid (this)" id="form">
+		<h1 class="form_title">Вход</h1>
+			<div class="form_gr">
+				<input type="text" class="form_input" placeholder=" " id="name" name="name">
+				<label class="form_label">Email</label>
+			</div>
+
+			<div class="form_gr">
+				<input type="password" placeholder=" " class="form_input" id="password" name="password">
+				<label class="form_label">Пароль</label>
+			</div>
+
+		<input type="submit" name="submit" value="Войти" class="form_button" onclick="valid(document.getElementById('form'))">
+	</form>
+</body>
+</html>

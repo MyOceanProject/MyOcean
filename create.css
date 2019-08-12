@@ -1,0 +1,226 @@
+@font-face {
+	font-family: 'UbuntuMono';
+	src: url(fonts/UbuntuMono/UbuntuMono-Regular) format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: rgb(245, 245, 245);
+}
+
+.header {
+	width: 100%;
+	height: 70px;
+	background-color: rgb(104, 169, 204);
+}
+
+.main {
+	width: 1170px;
+	margin: 0 auto;
+	float: right;
+	height: 1200px;
+	border-top: 0;
+}
+
+.ul-top {
+	font-family: 'Caveat', Verdana;
+	list-style: none;
+}
+
+.li-1{
+	font-size: 50px;
+	margin-left: 100px;
+	position: absolute;
+	padding-left: 10px;
+}
+
+.li-2 {
+	position: absolute;
+	font-size: 50px;
+	margin-left: 400px;
+}
+
+.li-3 {
+	margin-left: 700px;
+	margin-bottom: 200px;
+	font-size: 50px;
+	position: absolute;
+}
+
+.li-4 {
+	margin-left: 970px;
+	position: absolute;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+.li-5 {
+	margin-left: 1300px;
+	position: absolute;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+.ul-top a {
+	text-decoration: none;
+
+}
+
+.ul-top a:hover {
+	color: rgb(134, 66, 199);
+}
+
+.left {
+	margin-top: 60px;
+	width: 300px;
+	height: 470px;
+	border: 1px solid rgb(235, 235, 235);
+	background-color: rgb(222, 222, 224);
+	box-shadow: 0 0 5px grey;
+	float: left;
+	margin-left: 20px;
+}
+
+.button_input {
+	background-color: rgb(38, 44, 235);
+	color: #fff;
+	font-size: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
+	margin-left: 50px;
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+
+.button_input:hover {
+	background-color: rgb(23, 27, 130);
+}
+
+.button_input:active {
+	background-color: rgb(19, 22, 84);
+}
+
+.text_name {
+	margin-left: 50px;
+	height: 30px;
+	width: 200px;
+}
+
+.text_name:focus {
+	border: 1px solid black;
+	
+}
+
+h1, label {
+	font-family: Calibri;
+}
+
+.autor {
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.pasw_input {
+	margin-left: 50px;
+	height: 30px;
+	width: 200px;
+}
+
+.email {
+	margin-left: 50px;
+	height: 20px;
+	width: 190px;
+	padding: 5px;
+}
+
+p {
+	font-family: 'Ubuntu Mono', Calibri;
+}
+
+.p_form {
+	margin-bottom: 5px;
+}
+
+.text_ar {
+	text-align: center;
+	font-size: 20px;
+
+}
+
+textarea:hover,
+input:hover {
+	background-color: rgb(247, 247, 247);
+}
+
+.block {
+	width: 1000px;
+	margin-top: 60px;
+	margin-left: 70px;
+	height: 300px;
+	background-color: #fff;
+	box-shadow: 0 0 3px grey;
+}
+
+.block:hover {
+	border: 1px solid grey;
+}
+
+.text_block {
+	padding: 20px;
+	position: relative;
+
+}
+
+.h1_block {
+	margin-left: 30px;
+	position: absolute;
+}
+
+.p_block {
+	padding-top: 20px;
+	width: 400px;
+	height: 200px;
+	margin-top: 30px;
+	position: absolute;
+}
+
+.p_block2 {
+	position: absolute;
+	margin-top: 250px;
+	color: rgb(191, 191, 191);
+	font-style: italic;
+}
+
+.p_block3 {
+	color: rgb(142, 54, 224);
+	margin-top: 250px;
+	position: absolute;
+	margin-left: 300px;
+}
+
+.p_block4 {
+	color: rgb(89, 0, 148);
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+.news1:hover {
+	color: rgb(10, 67, 173);
+}
+
+.image {
+	margin-left: 700px;
+	margin-bottom: 300px;
+	width: 250px;
+	height: 250px;
+}
